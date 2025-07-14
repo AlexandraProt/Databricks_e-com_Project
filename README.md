@@ -1,41 +1,74 @@
-# Databricks_e-com_Project
-# 🛒 Cohort Retention Analysis with Fivetran & Databricks
+# 📊 Cohort Analysis Project (Databricks + BigQuery)
 
-This project demonstrates how to build a modern marketing analytics solution using the **modern data stack** — from data ingestion to cohort visualization — to analyze **customer retention behavior** in an e-commerce setting.
+This project explores user retention and repeat behavior using cohort analysis in an e-commerce dataset. SQL queries were executed in **BigQuery**, and visuals were built and analyzed in **Databricks**.
 
-## 🎯 Objective
+> 🔗 All visuals are available in the [notebook](./notebooks/Explore_cohort_analysis_bigquery_catalog.cohort_db.ecom_orders.ipynb) and Databricks dashboard.  
+> 📂 SQL queries can be found in the [`sql/`](./sql/) folder.
 
-- Ingest e-commerce sales data from a **GCP Cloud SQL** database using **Fivetran**.
-- Transform and model the data with **Databricks + Delta Lake**.
-- Perform **cohort analysis** to understand retention patterns and time to second purchase.
-- Visualize key trends using **Databricks Dashboards**.
+---
 
-## 🧱 Tools & Tech
+## 🧩 Visualizations
 
-- **Fivetran** – data ingestion from GCP Cloud SQL
-- **Databricks** – data transformation, modeling, and visualization
-- **Delta Lake** – for efficient storage and query performance
-- **SQL & Python (pyspark.sql)** – for data processing
-- **Databricks Dashboards** – for business insights
+### 📅 1. Cohort Size by Month  
+![Cohort Size by Month](./images/Cohort%20Size%20by%20Month.png)
 
-## 📊 Key Business Questions
+**🔍 Key Insights**  
+- **January 2024**: Largest cohort — 66 users.
+- **Consistent decline**: Each subsequent month shows fewer new users:
+  - Feb: 48 → Mar: 33 → Apr: 27 → May: 16 → Jun: 10
+- 📉 **Possible reasons**:
+  - Reduced marketing/ad spend
+  - Seasonal variation
+  - Issues with outreach/onboarding
 
-- How many new customers are acquired each month (cohort size)?
-- What is the time to second purchase for each cohort?
-- How does retention change over time across different customer acquisition months?
+✅ *Actionable Insight*: Review and replicate January’s successful acquisition campaigns.
 
-## 📈 Key Insights
+---
 
-- The largest customer acquisition occurred in **January 2024** with **66 new users**.
-- Subsequent months show a **decreasing trend** in new customer acquisition.
-- Time to second purchase varies across cohorts, with **some cohorts showing longer retention gaps**, indicating potential areas for improvement in re-engagement strategies.
+### 🔁 2. Repeat Purchase Rates by Cohort  
+![Repeat Purchase Rates by Cohort](./images/Repeat%20Purchase%20Rates%20by%20Cohort.png)
 
-## 🖼️ Visuals
+**🔍 Key Insights**  
+- **Strong 2nd Purchase Rate**: 96–100% across all cohorts.
+- **Typical Drop-Off**: From 2nd to 4th order.
+- **June 2024**: Underperformed — only 60% at 4th order (vs. 83% in Jan).
+- **March 2024**: Best performing cohort — sustainable repeat behavior:
+  - 2nd: 1.00, 3rd: 0.94, 4th: 0.82
 
-| Cohort Size by Month | Time to Second Purchase |
-|----------------------|--------------------------|
-| ![Cohort Size](./screenshots/cohort_size.png) | ![Time to Second Purchase](./screenshots/time_to_second_purchase.png) |
+---
 
-> 📍 All visuals are available in the [notebook](./notebooks/Explore_cohort_analysis_bigquery_catalog.cohort_db.ecom_orders.ipynb) and Databricks dashboard.
+### 📈 3. Retention Rate by Cohort  
+![Retention Rate by Cohort](./images/Retention%20Rate%20by%20Cohort.png)
 
+**🔍 Key Insights**  
 
+| Cohort     | 1-month | 2-month | 3-month | Notes |
+|------------|---------|---------|---------|-------|
+| Jan 2024   | 21%     | 18%     | 6%      | Weak engagement after first month |
+| Feb 2024   | 29%     | 15%     | 6%      | Better start, but same drop-off |
+| Mar 2024   | 42%     | 15%     | 12%     | Best long-term retention |
+| Apr 2024   | 41%     | 4%      | 0%      | Very sharp decline |
+| May 2024   | 44%     | 6%      | 0%      | High start, no long-term engagement |
+| Jun 2024   | 70%     | –       | –       | ⚠️ Long-term data not yet available |
+
+✅ *Conclusion*  
+- **March–May cohorts**: Good initial retention, but high churn by month 2–3.
+- **June**: Promising 1-month retention (70%), needs monitoring.
+- 🧪 **Next steps**:
+  - Improve Month 2+ experience
+  - Identify churn triggers
+  - Test retention strategies
+
+---
+
+## 🧮 SQL Scripts
+
+SQL queries used for cohort analysis are available [in this folder](./sql/), including:
+
+- `cohort_size.sql`
+- `repeat_purchase_rates.sql`
+- `retention_by_month.sql`
+
+> 💡 All queries are optimized for BigQuery and include `JOIN`, `DATE_DIFF`, `CASE` logic, and `GROUP BY` cohort aggregation.
+
+---
