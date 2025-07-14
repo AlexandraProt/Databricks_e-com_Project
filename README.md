@@ -38,5 +38,3 @@ This project demonstrates how to build a modern marketing analytics solution usi
 
 > 📍 All visuals are available in the [notebook](./notebooks/cohort_analysis.ipynb) and Databricks dashboard.
 
-## 📂 Project Structure
-
