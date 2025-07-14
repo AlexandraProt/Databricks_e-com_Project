@@ -36,5 +36,6 @@ This project demonstrates how to build a modern marketing analytics solution usi
 |----------------------|--------------------------|
 | ![Cohort Size](./screenshots/cohort_size.png) | ![Time to Second Purchase](./screenshots/time_to_second_purchase.png) |
 
-> 📍 All visuals are available in the [notebook](./notebooks/cohort_analysis.ipynb) and Databricks dashboard.
+> 📍 All visuals are available in the [notebook](./notebooks/Explore_cohort_analysis_bigquery_catalog.cohort_db.ecom_orders.ipynb) and Databricks dashboard.
+
 
