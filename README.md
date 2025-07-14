@@ -1,53 +1,42 @@
 # Databricks_e-com_Project
+# 🛒 Cohort Retention Analysis with Fivetran & Databricks
 
-# 📊 Marketing Analytics: Customer Retention with Cohort Analysis
+This project demonstrates how to build a modern marketing analytics solution using the **modern data stack** — from data ingestion to cohort visualization — to analyze **customer retention behavior** in an e-commerce setting.
 
 ## 🎯 Objective
 
-This project demonstrates how to build a **modern marketing analytics solution** to analyze **customer retention** through cohort analysis.
+- Ingest e-commerce sales data from a **GCP Cloud SQL** database using **Fivetran**.
+- Transform and model the data with **Databricks + Delta Lake**.
+- Perform **cohort analysis** to understand retention patterns and time to second purchase.
+- Visualize key trends using **Databricks Dashboards**.
 
-You will:
+## 🧱 Tools & Tech
 
-- Ingest e-commerce sales data from a **GCP Cloud SQL** database using **Fivetran**
-- Transform and model the data in **Databricks** using **Delta Lake**
-- Visualize **cohort trends** (e.g., time to second or fourth purchase) using **Databricks Dashboards**
+- **Fivetran** – data ingestion from GCP Cloud SQL
+- **Databricks** – data transformation, modeling, and visualization
+- **Delta Lake** – for efficient storage and query performance
+- **SQL & Python (pyspark.sql)** – for data processing
+- **Databricks Dashboards** – for business insights
 
----
+## 📊 Key Business Questions
 
-## 🛠️ Tools & Technologies
+- How many new customers are acquired each month (cohort size)?
+- What is the time to second purchase for each cohort?
+- How does retention change over time across different customer acquisition months?
 
-| Tool          | Purpose                                     |
-|---------------|---------------------------------------------|
-| **Fivetran**  | Automated data ingestion from Cloud SQL     |
-| **Databricks**| Data transformation, modeling, dashboarding |
-| **Delta Lake**| Optimized storage and performance            |
-| **SQL**       | Cohort modeling & metrics                   |
+## 📈 Key Insights
 
----
+- The largest customer acquisition occurred in **January 2024** with **66 new users**.
+- Subsequent months show a **decreasing trend** in new customer acquisition.
+- Time to second purchase varies across cohorts, with **some cohorts showing longer retention gaps**, indicating potential areas for improvement in re-engagement strategies.
 
-## 📈 Key Features
+## 🖼️ Visuals
 
-- 📦 **Cohort identification** based on first purchase date  
-- ⏱️ **Time-to-repeat purchase** metrics (2nd, 4th purchase)  
-- 📊 Interactive **Databricks Dashboard** with retention trends  
-- 💡 Fully **SQL-based pipeline**, leveraging modern data stack principles
+| Cohort Size by Month | Time to Second Purchase |
+|----------------------|--------------------------|
+| ![Cohort Size](./screenshots/cohort_size.png) | ![Time to Second Purchase](./screenshots/time_to_second_purchase.png) |
 
----
+> 📍 All visuals are available in the [notebook](./notebooks/cohort_analysis.ipynb) and Databricks dashboard.
 
-## 🧠 What You'll Learn
-
-By completing this project, you will understand how:
-
-- The **modern data stack** works — from ingestion to modeling to BI
-- To apply **cohort analysis** for retention and lifetime value insights
-- To build **actionable dashboards** for business stakeholders
-
----
-
-## 📎 Sample Visualizations
-
-![Cohort Size by Month](./screenshots/cohort_size_by_month.png)
-![Repeat Rate by Month](./screenshots/repeat_rate_by_month.png)
-![Time to 2nd Purchase](./screenshots/time_to_second_purchase.png)
-
+## 📂 Project Structure
 
