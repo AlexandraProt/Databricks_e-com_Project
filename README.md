@@ -1,7 +1,7 @@
 # 📊 Cohort Analysis Project (Databricks + BigQuery)
 
 This project explores user retention and repeat behavior using cohort analysis in an e-commerce dataset. SQL queries were executed in **BigQuery**, and visuals were built and analyzed in **Databricks**.
->📍 All visuals are available in the [notebook](cohort_analysis_biqquery_catalog.cohort_db.ecom_orders 2025-07-08 11_52_57.ipynb) and Databricks dashboard. 
+>📍 All visuals are available in the [notebook](cohort_analysis_biqquery_catalog.cohort_db.ecom_orders_2025-07-08_11_52_57.ipynb) and Databricks dashboard. 
 > 📂 SQL queries can be found in the [`sql/`](./sql/) folder.
 
 ---
