@@ -64,7 +64,7 @@ This project explores user retention and repeat behavior using cohort analysis i
 
 ## 🧮 SQL Scripts
 
-SQL queries used for cohort analysis are available [in this folder](./sql/), including:
+SQL queries used for cohort analysis are available [in this folder](Explore_cohort_analysis_biqquery_catalog.cohort_db.ecom_orders_2025-07-08_11_52_57.ipynb), including:
 
 - `cohort_size.sql`
 - `repeat_purchase_rates.sql`
