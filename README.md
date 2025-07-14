@@ -11,7 +11,7 @@ This project explores user retention and repeat behavior using cohort analysis i
 ## 🧩 Visualizations
 
 ### 📅 1. Cohort Size by Month  
-![Cohort Size by Month](./images/Cohort%20Size%20by%20Month.png)
+![Cohort Size by Month](Cohort_Size_by_Month.png)
 
 **🔍 Key Insights**  
 - **January 2024**: Largest cohort — 66 users.
@@ -27,7 +27,7 @@ This project explores user retention and repeat behavior using cohort analysis i
 ---
 
 ### 🔁 2. Repeat Purchase Rates by Cohort  
-![Repeat Purchase Rates by Cohort](./images/Repeat%20Purchase%20Rates%20by%20Cohort.png)
+![Repeat Purchase Rates by Cohort](Repeat_Purchase_Rates_by_Cohort.png)
 
 **🔍 Key Insights**  
 - **Strong 2nd Purchase Rate**: 96–100% across all cohorts.
@@ -39,7 +39,7 @@ This project explores user retention and repeat behavior using cohort analysis i
 ---
 
 ### 📈 3. Retention Rate by Cohort  
-![Retention Rate by Cohort](./images/Retention%20Rate%20by%20Cohort.png)
+![Retention Rate by Cohort](Retention_Rate_by_Cohort.png)
 
 **🔍 Key Insights**  
 
