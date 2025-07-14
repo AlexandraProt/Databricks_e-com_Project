@@ -2,8 +2,8 @@
 
 This project explores user retention and repeat behavior using cohort analysis in an e-commerce dataset. SQL queries were executed in **BigQuery**, and visuals were built and analyzed in **Databricks**.
 
->📍 All visuals and SQL queries are available in the [Notebook](Explore_cohort_analysis_biqquery_catalog.cohort_db.ecom_orders_2025-07-08_11_52_57.ipynb) and Databricks dashboard. 
-> [Video Presentation](https://masterschool.zoom.us/rec/play/QREQQgqzyDqCtgdFAj0aS1wd8UvjPfXkgrqu_2qIiThVA1KVqI2zjslEskgr289ff1hLiXe5vYSkaVJ_.E6aLB2EQTwomdEhN?eagerLoadZvaPages=&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fmasterschool.zoom.us%2Frec%2Fshare%2F5Yq-oz-LbtCl08wsTlWk1XALG0c6itdIqn-o8BfU7axnbpj_r05zLHQcI94lOGMC.I5lGJZzGRvryyPmV) 
+### >📍 All visuals and SQL queries are available in the [Notebook](Explore_cohort_analysis_biqquery_catalog.cohort_db.ecom_orders_2025-07-08_11_52_57.ipynb) and Databricks dashboard. 
+### > [Video Presentation](https://masterschool.zoom.us/rec/play/QREQQgqzyDqCtgdFAj0aS1wd8UvjPfXkgrqu_2qIiThVA1KVqI2zjslEskgr289ff1hLiXe5vYSkaVJ_.E6aLB2EQTwomdEhN?eagerLoadZvaPages=&accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fmasterschool.zoom.us%2Frec%2Fshare%2F5Yq-oz-LbtCl08wsTlWk1XALG0c6itdIqn-o8BfU7axnbpj_r05zLHQcI94lOGMC.I5lGJZzGRvryyPmV) 
 32:00-40:00 Speaker Oleksandra Protsenko
 
 ---
